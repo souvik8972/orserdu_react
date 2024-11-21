@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@300;400;700&family=Lato:wght@300;400;700&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global css */
+body{
+  font-family: Sofia Sans Semi Condensed, lato, sans-serif
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+ 
+}
