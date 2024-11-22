@@ -34,7 +34,8 @@ export default {
          mint_green:'#CBF0E3',
         light_mint_green:"#E0FAF3",
         dark_green:"#006937",
-        list_color:"#6bcdb2"
+        list_color:"#6bcdb2",
+        light_gray:"#F6F6F6"
       },
       fontFamily: {
         sans: [
