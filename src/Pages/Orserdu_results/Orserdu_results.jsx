@@ -7,7 +7,8 @@ const Orserdu_results = () => {
   return (
     <>
     {/* add HeroConatiner  */}
-       <HeroContainer img={img} >
+    {/* need to pass img, navLink,navText*/}
+       <HeroContainer img={img} navLink={"/orserdu-safety"} navText={"ORSERDU safety "}  >
 
     <h1 className='h-[110vh] w-full'></h1>
     

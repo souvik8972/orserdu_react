@@ -63,7 +63,7 @@ const Container = () => {
       </div>
       {/*  */}
       <div className=" conatiner_text w-full  flex justify-center items-center flex-col">
-      <div class="text-[16px] font-[300] w-[80%] flex justify-start items-center mt-1">
+      <div className="text-[16px] font-[300] w-[80%] flex justify-start items-center mt-1">
         <p className="">
       ER+, estrogen receptor-positive;
           <span>ESR1</span>, estrogen receptor 1; HER2-, human epidermal growth factor
