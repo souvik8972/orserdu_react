@@ -50,12 +50,12 @@ const Navbar = () => {
         </p>
       </div>
       {/* navbar middle section   */}
-      <div className=" bs middle-section h-[121px] w-full flex justify-start xxl:justify-center z-[1001]   shadow-black   bg-white  "   >
+      <div className=" bs middle-section h-[121px] w-full flex justify-start xxl:justify-center z-[1001]    shadow-black   bg-white  "   >
         {/* insdie middle section */}
-        <div className="w-[90%]  h-[100%] flex justify-center items-end xxl:w-[78%] ">
+        <div className="w-[100%]  h-[100%] flex justify-center items-end xxl:w-[78%] ">
           <div className="inside_bottom_section  w-full h-[85%] flex  ">
             {/* left section */}
-            <div className="left_section w-[17%] xxl:w-[20%] h-full  flex justify-start ">
+            <div className="left_section w-[190px] xxl:w-[20%] h-full  flex justify-start  ">
               {/* logo section */}
               <div className="xxl:w-[204px] w-[12.75rem]  h-[80%] xxl:h-[80%] mt-1  mr-3">
                 <img
@@ -66,10 +66,10 @@ const Navbar = () => {
               </div>
             </div>
             {/* right section */}
-            <div className="right_section w-full  xl:w-full  xxl:w-[900px] h-full  flex flex-col justify-between">
+            <div className="right_section w-full  xl:w-[887px]  xxl:w-[900px] h-full   flex flex-col justify-between">
               {/* menu section */}
               {/* top menu */}
-              <div className="top_link h-[20px] w-full  flex justify-end gap-[40px] text-[14px] font-[300] underline leading-[21px]">
+              <div className="top_link h-[20px] w-full  flex justify-center xxl:justify-end gap-[40px] text-[14px] font-[300] underline leading-[21px]  ">
                 <a className="isi-scroll">Important Safety Information</a>
                 <a href="https://rxmenarinistemline.com/United%20States%20Patient%20Package%20Insert%20Approved.pdf">
                   Medication Guide

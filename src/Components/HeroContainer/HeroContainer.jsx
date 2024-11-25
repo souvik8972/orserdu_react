@@ -14,7 +14,7 @@ const HeroContainer = ({ children, img, navLink,navText }) => {
 
       {/* Content Section */}
       <div className="w-full relative -mt-14 bg-light_mint_green h-auto z-0 flex justify-center">
-        <div className="relative w-[1140px] h-auto bg-white rounded-bl-[112px] rounded-br-[112px] shadow_f mb-12 flex justify-center">
+        <div className="relative w-[1000px] xxl:w-[1140px] h-auto bg-white rounded-bl-[112px] rounded-br-[112px] shadow_f mb-12 flex justify-center">
           <div className="mt-20 pt-0 pb-0 mb-[5rem] w-[85%]">{children}</div>
 
           {/* Navigation Section */}
