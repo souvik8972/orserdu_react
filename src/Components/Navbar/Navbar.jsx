@@ -11,13 +11,20 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > lastScrollY) {
-        // User is scrolling down, hide navbar
-        setIsVisible(false);
+      // Start checking only after scrolling 260px
+      if (window.scrollY > 220) {
+        if (window.scrollY > lastScrollY) {
+          // User is scrolling down, hide navbar
+          setIsVisible(false);
+        } else {
+          // User is scrolling up, show navbar
+          setIsVisible(true);
+        }
       } else {
-        // User is scrolling up, show navbar
+        // Always show navbar if below 260px
         setIsVisible(true);
       }
+
       setLastScrollY(window.scrollY);
     };
 
@@ -32,7 +39,7 @@ const Navbar = () => {
   return (
     // navbar conatiner
     <div
-      className={`h-[205px] top-0 z-[1000] bg-white w-full sticky transition-transform duration-300 ${
+      className={`h-[205px] top-0 z-[1000] bg-light_mint_green w-full sticky transition-transform duration-300 shadow-xl ${
         isVisible ? "transform-none" : "-translate-y-full"
       }`}
     >
@@ -43,14 +50,14 @@ const Navbar = () => {
         </p>
       </div>
       {/* navbar middle section   */}
-      <div className="middle-section h-[121px] w-full flex justify-start xxl:justify-center z-[1001]    ">
+      <div className=" bs middle-section h-[121px] w-full flex justify-start xxl:justify-center z-[1001]   shadow-black   bg-white  "   >
         {/* insdie middle section */}
-        <div className="w-[90%] h-[100%] flex justify-center items-end xxl:w-[78%] ">
+        <div className="w-[90%]  h-[100%] flex justify-center items-end xxl:w-[78%] ">
           <div className="inside_bottom_section  w-full h-[85%] flex  ">
             {/* left section */}
             <div className="left_section w-[17%] xxl:w-[20%] h-full  flex justify-start ">
               {/* logo section */}
-              <div className="xxl:w-[204px] w-[12.75rem]  h-[80%] xxl:h-[80%] mt-1 ">
+              <div className="xxl:w-[204px] w-[12.75rem]  h-[80%] xxl:h-[80%] mt-1  mr-3">
                 <img
                   className=" w-[8.9375rem] ml-5 xxl:w-full xxl:ml-0 h-full object-contain block"
                   src={logo_img}
@@ -59,7 +66,7 @@ const Navbar = () => {
               </div>
             </div>
             {/* right section */}
-            <div className="right_section w-[75%] h-full  flex flex-col justify-between">
+            <div className="right_section w-full  xl:w-full  xxl:w-[900px] h-full  flex flex-col justify-between">
               {/* menu section */}
               {/* top menu */}
               <div className="top_link h-[20px] w-full  flex justify-end gap-[40px] text-[14px] font-[300] underline leading-[21px]">
@@ -102,9 +109,12 @@ const Navbar = () => {
                           <i>ESR1</i> mutations
                         </nobr>
                       </span>
-                      <span>
-                        <IoIosArrowDown className="font-extrabold text-green-500 group-hover:rotate-180" />
-                      </span>
+                      <span className="font-extrabold flex items-center">
+                      <IoIosArrowDown
+    size={24} // Adjust the size as needed
+    className="text-green-500 group-hover:rotate-180 transform transition-transform duration-300"
+  />
+</span>
                     </span>
                   </span>
 
@@ -245,7 +255,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* navbar bottom section */}
-      <div className="abc bottom-section h-[42px] tracking-[0.11px] bg-light_mint_green w-full flex justify-center items-center text-[22px] font-[550] p2">
+      <div className="abc bottom-section h-[42px] tracking-[0.11px]  w-full flex justify-center items-center text-[22px] font-[550] p2">
         <p className="paddmob py-1">
           Share your ORSERDU story with others.
           <span style={{ textDecoration: "underline", color: "#000" }}>

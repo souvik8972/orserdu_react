@@ -4,8 +4,8 @@ import image2 from "../../assets/images/logos/Stemline_Tag_R_RGB.png"
 
 const Footer = () => {
   return (
-    <footer className="bg-light_gray h-64 w-full mt-12 flex justify-center items-center border-b-[1.8rem] border-list_color font-[300] text-[18px]">
-      <div className="w-[80%] h-full  flex justify-center items-center">
+    <footer className="bg-light_gray h-64 w-full mt-12 flex justify-center items-center border-b-[1.8rem] border-list_color font-[300] xxl:text-[1.1rem] text-[0.85rem]">
+      <div className="w-[95%] xxl:w-[80%] h-full  flex justify-center items-center">
         {/* text  */}
         <div className="w-[60%] h-[70%]  flex flex-col gap-4">
           {/* text area */}
@@ -16,7 +16,7 @@ const Footer = () => {
             <p className="">All rights reserved. Last updated 10/24 MAT-US-ELA-00319-v3</p>
           </div>
           {/* link area */}
-          <div className="flex flex-wrap items-center space-x-2 text-[18px] font-300 underline text-dark_green">
+          <div className="flex flex-wrap items-center space-x-2 text-[0.80rem] xxl:text-[1.1rem] font-300 underline text-dark_green">
       <a
         target="_blank"
         rel="noreferrer"

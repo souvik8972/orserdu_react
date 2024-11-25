@@ -1,8 +1,12 @@
 import React from 'react'
+import HeroContainer from '../../Components/HeroContainer/HeroContainer'
+import img from "../../assets/images/hero/aboutDesktop.png"
 
 const Orserdu_results = () => {
   return (
-    <div>Orserdu_results</div>
+  <HeroContainer img={img}>
+    <h1>Hello</h1>
+  </HeroContainer>
   )
 }
 

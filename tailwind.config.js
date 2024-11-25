@@ -16,7 +16,7 @@ export default {
         pink: "#e83e8c",
         red: "#dc3545",
         orange: "#fd7e14",
-        yellow: "#ffc107",
+        yellow: "#FFD506",
         green: "#28a745",
         teal: "#20c997",
         cyan: "#17a2b8",
@@ -35,7 +35,8 @@ export default {
         light_mint_green:"#E0FAF3",
         dark_green:"#006937",
         list_color:"#6bcdb2",
-        light_gray:"#F6F6F6"
+        light_gray:"#F6F6F6",
+        green_bar:'#70C7AF'
       },
       fontFamily: {
         sans: [
@@ -77,7 +78,6 @@ export default {
         lg: "992px",
         xl: "1023px",
         xxl: "1280px",
-
         xxxl: "1600px",
       },
       spacing: {

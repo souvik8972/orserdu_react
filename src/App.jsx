@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import ShimmerEffect from "./Components/Loader/ShimmerEffect";
 import Footer from "./Components/Footer/Footer";
+import FooterPopUp from "./Components/FooterPopUP/FooterPopUp";
+
 
 // Lazy loading for pages
 const Home = lazy(() => import("./Pages/Home/Home"));
@@ -15,8 +17,12 @@ const OrserduSafety = lazy(() => import("./Pages/Orserdu_safety/Orserdu_safety")
 const OrserduResults=lazy(()=>import ("./Pages/Orserdu_results/Orserdu_results"))
 
 function App() {
+
+ 
+
+
   return (
-    <Router>
+    <Router >
       <Navbar />
       <Suspense fallback={<ShimmerEffect/>}>
         <Routes>
@@ -33,6 +39,7 @@ function App() {
 
         </Routes>
       </Suspense>
+      {/* <FooterPopUp/> */}
       <Footer/>
     </Router>
   );

@@ -3,8 +3,8 @@ import { ShimmerPostItem } from "react-shimmer-effects";
 
 const ShimmerEffect = () => {
   return (
-    <div className="w-full h-[100vh]">
-        <ShimmerPostItem text hasImage card title  cta />
+    <div className="w-full mt-10 ">
+        <ShimmerPostItem text hasImage card title  cta  animationDuration={2}  />
     </div>
   )
 }
