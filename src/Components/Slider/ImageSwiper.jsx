@@ -44,7 +44,7 @@ export default function ImageSwiper() {
       >
         {slides.map((val, index) => (
           <SwiperSlide key={index}>
-            <img src={val.image} alt={val.alt} />
+            <img src={val.image} alt={val.alt} className='xl:h-[500px] object-cover w-full '  />
           </SwiperSlide>
         ))}
       </Swiper>

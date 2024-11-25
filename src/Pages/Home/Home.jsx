@@ -13,7 +13,7 @@ const Container = () => {
       <div className=" relative">
       <ImageSwiper />
  {/* box top of image   */}
-<div className="w-[368px] h-[300px] absolute top-3 z-50 right-7 xxl:right-32 bg-white rounded-3xl flex flex-col  p-4 shadow-xl ">
+<div className="xxl:w-[368px] xxl:h-[300px] xl:w-[320px] xl:h-[310px] absolute top-3 z-50 right-5 xxl:right-[6rem] bg-white rounded-3xl flex flex-col  p-4 shadow-xl ">
 
 <div className=" border-b-2 border-yellow mb-2">
     <p className="text-[18px] tracking-[.09px] leading-[20px] font-[300] mb-2">
@@ -51,7 +51,7 @@ const Container = () => {
 
 </div>
 {/* text top of image */}
-<div className="absolute  bottom-24 text-[24px] font-[600] z-50 w-full text-center text-dark_green leading-[23px]">
+<div className="absolute xl:bottom-[13%] xxl:bottom-20 xl:text-[18px] xxl:text-[22px] font-[600] z-50 w-full text-center text-dark_green leading-[23px]">
   <p >
     When it’s time to change treatment, ORSERDU may be the one for you. It works specifically against
     <em>ESR1</em>-mutated <br/> metastatic breast cancer, and it’s a once-daily pill you can take at home

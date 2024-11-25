@@ -21,7 +21,7 @@ const HeroContainer = ({ children, img, navLink,navText }) => {
           {navLink && (
             <NavLink to={navLink} className=" hover:underline  text-dark_green absolute -bottom-5 bg-white shadow_round p-2 flex items-center justify-center  w-[18%] h-12 rounded-3xl ">
               <div className="w-[85%] p-3 flex justify-between items-center h-full ">
-            <div className="text-[18px]  " >
+            <div className="xxl:text-[18px]  " >
               {navText}
             </div>
               </div>
