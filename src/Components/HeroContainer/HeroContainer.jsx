@@ -19,16 +19,16 @@ const HeroContainer = ({ children, img, navLink,navText }) => {
 
           {/* Navigation Section */}
           {navLink && (
-            <div className="absolute -bottom-5 bg-white shadow_round p-2 flex items-center justify-center  w-[18%] h-12 rounded-3xl ">
+            <NavLink to={navLink} className=" hover:underline font-semibold text-dark_green absolute -bottom-5 bg-white shadow_round p-2 flex items-center justify-center  w-[18%] h-12 rounded-3xl ">
               <div className="w-[85%] p-3 flex justify-between items-center h-full ">
-            <NavLink to={navLink} className="text-[18px] text-dark_green font-semibold" >
+            <div className="text-[18px]  " >
               {navText}
-            </NavLink>
+            </div>
               </div>
               <div className="w-[15%] p-2   ">
                 <img src={arrow} alt="Arrow" />
               </div>
-            </div>
+            </NavLink>
           )}
         </div>
       </div>
